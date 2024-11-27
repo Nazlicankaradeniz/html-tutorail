@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Ödevi</title>
+</head>
+<body>
+    <h1>Müşteri Kayıt Formu</h1>
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+        <fieldset>
+           <legend>Kişisel Bilgiler</legend>
+           <label for="adsoy">Adınız Soyad</label><br>
+           <input type="text" name="adsoy" id="adsoy" required><br>
+           <label for="dtarih">Doğum Tarihi</label><br>
+           <input type="date" name="dtarih" id="dtarih" value="2000-01-01"><br>
+           <label for="maas">Maaş Beklentiniz</label><br>
+           <input type="number" id="maas" name="maas" max="60000" min="20000" ><br>
+           <label for="ders">En Sevdiğiniz Ders</label><br>
+           <input type="text" name="ders" id="ders" list="dersler" autocomplete="no"><br>
+           <datalist id="dersler">
+            <option value="Web Tabanlı">
+            <option value="Mobil Uygulamaları">
+            <option value="Grafik Canlandırma">
+            <option value="Yapay Zeka">
+           </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Üyelik Bilgileri</legend>
+            <label for="kullanici">Kullanıcı Adınız</label><br>
+            <input type="text" name="kullanici" id="kullanici" maxlength="5" required ><br>
+            <label for="Eposta">E-posta</label><br>
+            <input type="email" name="Eposta" id="Eposta" placeholder="ornek@yazilim11.com" required><br>
+            <label for="sifre">Şifre</label><br>
+            <input type="password" name="sifre" id="sifre" placeholder="En az 8 karakter olmalıdır" minlength="8"  maxlength="50"><br>
+            <label for="üye"> Üyelik Sözleşmesi</label><br>
+            <textarea name="üye" id="üye"  rows="5" cols="23">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci expedita voluptatibus totam corporis, cupiditate veniam dolore impedit quo perspiciatis eveniet in dolorum quis ut odio praesentium, vero at accusamus quaerat.
+            Non quam enim eum sequi maxime impedit iusto consectetur alias adipisci dolor quas sit, omnis cumque molestias ex nemo perspiciatis in. Illum eveniet non corrupti ea suscipit expedita ipsam molestias?
+            Quo hic eum animi, saepe sit molestiae accusamus natus. Asperiores, labore id optio, sint atque tenetur eligendi ratione libero quis natus, fuga illum similique sequi laboriosam repudiandae? Placeat, temporibus provident.
+             </textarea>
+        </fieldset>
+        <button type="submit"> Kaydet</button> <button type="reset">temizle</button>
+    
+       
+       </form>
+</body>
+</html>
