@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Örneğini</title>
+</head>
+<body>
+     <h1>Fieldset ve Select  Kullanımı </h1>
+     <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+       <fieldset>
+        <legend> kişisel bilgiler</legend>
+        <label for="isim">isim</label><br>
+        <input type="text" name="isim" id="isim" placeholder="ad"><br><br>
+        <label for="soyad">soyisim</label><br>
+        <input type="text" name="soyad" id="soyad" placeholder="soyad"><br>
+        <input type="radio" name="cinsinyet" id="kiz">
+        <label for="kiz">kız</label>
+        <input type="radio" name="cinsinyet" id="erkek">
+        <label for="erkek">erkek</label><br>
+        <label for="sehir">yaşadığınız şehir</label><br>
+        <input type="text" name="sehir" id="sehir"><br>
+        <label for="dtarih">Doğum Tarihi</label><br>
+        <input type="date" id="dtarih" name="dtarih" value="2024-01-01"><br> 
+       </fieldset>
+        <fieldset>
+        <legend>Okul Blgileri</legend>
+        <label for="okul"> Okul</label><br>
+        <input type="text" name="okul" id="okul"><br><br>
+
+        <label for="sinif"> Sınıf</label><br>
+        <input type="text" name="sinif" id="sinif"><br><br>
+
+        <label for="bolum"> Bölümünüz</label><br>
+        <select name="bolum" id="bolum">
+            <option value="1">bilişim teknolojileri</option>
+            <option value="2"> çocuk gelişim</option>
+            <option value="3">moda tasarım</option>
+            <option value="4"> grafik </option>
+        </select><br><br>
+        <button type="submit">Kaydet</button>
+     </fieldset>
+     <fieldset>
+        <legend>ek bilgiler</legend>
+        <textarea name="ekbilgiler" id="ekbilgiler" cols="50" rows="5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, dicta. Id ipsum totam sunt corrupti provident quas, iste excepturi impedit fugit quae fugiat omnis dolorum ut molestias eveniet dolores consequuntur.</textarea><br>
+        <button type="submit">Kaydet</button><br>
+        <input type="checkbox" name="bilgi" id="bilgi">
+       <label for="bigi">bilgiler kabul et</label>
+       <input type="checkbox" name="cerez" id="cerez">
+       <label for="cerez">çerezleri kabul et</label>
+      
+     </fieldset>
+    </form>
+</body>
+</html>
