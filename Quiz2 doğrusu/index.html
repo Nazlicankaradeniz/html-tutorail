@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz2</title>
+</head>
+    <h1>Nazlıcan Karadeniz</h1>
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+        <fieldset>
+            <legend>Nazlıcan Karadeniz</legend>
+            <label for="anahtar">Güvenlik Anahtarı:</label><br>
+            <input type="text" id="anahtar" name="anahtar" value="65348764382764832897" disabled><br><br>
+
+            <label for="eposta">E-posta:</label><br>
+            <input type="email" name="eposta" id="eposta" required placeholder="ornek@gmail.com"><br><br>
+
+            <label for="dtarih">Doğum Tarihi:</label><br>
+            <input type="date" name="dtarih" id="dtarih" min="2000-01-01" max="2010-12-31"><br><br>
+
+            <label for="sifre">Şifre:</label> <br>
+            <input type="password" name="sifre" id="sifre" maxlength="8" minlength="8"><br><br>
+
+           <label for="avatar">Avatar</label><br>
+           <select name="avatar" id="avatar">
+            <option value="1"> dory</option>
+            <option value="2">nemo</option>
+            <option value="3">moana</option>
+            <option value="4">rango</option>
+           </select>
+        </fieldset>
+        <br>
+        <button type="submit">kaydet</button> <button type="reset">Temizle</button>
+    </form>
+</body>
+</html>
